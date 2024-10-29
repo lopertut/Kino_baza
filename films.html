@@ -5,32 +5,32 @@
     <title>Фильмы</title>
     <meta name="description" content="КиноБаза - это портал о кино" />
     <meta name="keywords" content="фильмы, фильмы онлайн, hd" />
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
-<div class="main">
-    <div class="header">
-        <div class="logo">
-            <div class="logo_text">
-                <h1><a href="index.html">КиноБаза</a></h1>
-                <h2>Кино - наша страсть!</h2>
-            </div>
+<header>
+    <div class="logo">
+        <div class="logo_text">
+            <h1><a href="index.html">КиноБаза</a></h1>
+            <h2>Кино - наша страсть!</h2>
         </div>
     </div>
+</header>
 
-    <div class="menubar">
-        <ul class="menu">
-            <li><a href="index.html">Главная</a></li>
-            <li class="selected"><a href="films.html">Фильмы</a></li>
-            <li><a href="#">Сериалы</a></li>
-            <li><a href="rating.html">Рейтинг фильмов</a></li>
-            <li><a href="contact.html">Контакты</a></li>
-        </ul>
-    </div>
+<nav>
+    <ul class="menu">
+        <li><a href="index.html">Главная</a></li>
+        <li class="selected"><a href="films.html">Фильмы</a></li>
+        <li><a href="serials.html">Сериалы</a></li>
+        <li><a href="rating.html">Рейтинг фильмов</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+        <li><a href="eng/films_eng.html">eng</a></li>
+    </ul>
+</nav>
 
-    <div class="site_content">
-        <div class="sidebar_container">
+<main>
+        <aside class="sidebar_container">
             <div class="sidebar">
                 <h2>Поиск</h2>
                 <form method="post" action="#" id="search_form">
@@ -62,42 +62,38 @@
             <div class="sidebar">
                 <h2>Рейтинг фильмов</h2>
                 <ul>
-                    <li><a href="show.html">Интерстеллар</a><span class="rating_sidebar">8.1</span></li>
+                    <li><a href="films/intestaler.html">Интерстеллар</a><span class="rating_sidebar">8.1</span></li>
                     <li><a href="#">Матрица</a><span class="rating_sidebar">8.0</span></li>
                     <li><a href="#">Безумный макс</a><span class="rating_sidebar">7.5</span></li>
                     <li><a href="#">Облачный атлас</a><span class="rating_sidebar">7.4</span></li>
                 </ul>
             </div>
-        </div>
+        </aside>
 
-        <div class="content">
+        <section class="content">
             <div class="info_film">
-                <img src="assets/img/inter.png" alt="Интерстеллар">
-                <p>Когда засуха приводит человечество к продовольственному кризису, коллектив исследователей и учёных отправляется сквозь червоточину (которая предположительно соединяет области пространства-времени через большое расстояние) в путешествие, чтобы превзойти прежние ограничения для космических путешествий человека и переселить человечество на другую планету.</p>
-                <div class="button"><a href="show.html">Смотреть</a></div>
+                <a href="films/intestaler.html"><img src="assets/img/inter.png"></a>
+                <p>Когда Земля находится на грани экологической катастрофы, группа астронавтов и учёных отправляется в путешествие через червоточину в поисках новой планеты, пригодной для жизни человечества. Фильм поднимает вопросы о любви, времени и выживании.</p>
             </div>
 
             <div class="info_film">
-                <img src="assets/img/max.png" alt="Безумный Макс">
-                <p>Когда засуха приводит человечество к продовольственному кризису, коллектив исследователей и учёных отправляется сквозь червоточину (которая предположительно соединяет области пространства-времени через большое расстояние) в путешествие, чтобы превзойти прежние ограничения для космических путешествий человека и переселить человечество на другую планету.</p>
-                <div class="button"><a href="#">Смотреть</a></div>
+                <a href="films/max.html"><img src="assets/img/max.png"></a>
+                <p>В мире, охваченном хаосом и отсутствием ресурсов, Макс, одиночка, сталкивается с жестокими бандами, чтобы помочь группе женщин, стремящихся к свободе. Фильм насыщен захватывающими погонями и невероятной атмосферой постапокалиптического мира.</p>
             </div>
 
             <div class="info_film">
-                <img src="assets/img/matrix.png" alt="Матрица">
-                <p>Когда засуха приводит человечество к продовольственному кризису, коллектив исследователей и учёных отправляется сквозь червоточину (которая предположительно соединяет области пространства-времени через большое расстояние) в путешествие, чтобы превзойти прежние ограничения для космических путешествий человека и переселить человечество на другую планету.</p>
-                <div class="button"><a href="#">Смотреть</a></div>
+                <a href="films/matrix.html"><img src="assets/img/matrix.png"></a>
+                <p>Нео, хакер, обнаруживает, что мир, в котором он живёт, — всего лишь иллюзия, созданная искусственным интеллектом для порабощения человечества. Вместе с группой повстанцев он начинает борьбу за свободу людей и раскрытие правды о "Матрице".</p>
             </div>
 
             <div class="info_film">
-                <img src="assets/img/cloud.png" alt="Облачный атлас">
-                <p>Когда засуха приводит человечество к продовольственному кризису, коллектив исследователей и учёных отправляется сквозь червоточину (которая предположительно соединяет области пространства-времени через большое расстояние) в путешествие, чтобы превзойти прежние ограничения для космических путешествий человека и переселить человечество на другую планету.</p>
-                <div class="button"><a href="#">Смотреть</a></div>
+                <a href="films/cloud_atlas.html"><img src="assets/img/cloud.png"></a>
+                <p>Фильм исследует шесть переплетающихся историй, происходящих в разное время и местах. Это рассказ о судьбе, свободе воли и о том, как поступки одного человека могут повлиять на будущее поколений. "Облачный атлас" — это размышление о взаимосвязанности всех жизней.</p>
             </div>
-        </div>
-    </div>
+        </section>
+</main>
 
-    <div class="footer">
+    <footer>
         <p>
             <a href="index.html">Главная</a> |
             <a href="films.html">Фильмы</a> |
@@ -106,8 +102,6 @@
             <a href="contact.html">Контакты</a>
         </p>
         <p>kinopoisk.ru</p>
-    </div>
-</div>
-
+    </footer>
 </body>
 </html>

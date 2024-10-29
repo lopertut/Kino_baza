@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Фильм Матрица</title>
+  <meta name="description" content="КиноБаза - это портал о кино" />
+  <meta name="keywords" content="фильмы, фильмы онлайн, hd" />
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="main">
+  <div class="header">
+    <div class="logo">
+      <div class="logo_text">
+        <h1><a href="../index.html">КиноБаза</a></h1>
+        <h2>Кино - наша страсть!</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="menubar">
+    <ul class="menu">
+      <li><a href="../index.html">Главная</a></li>
+      <li class="selected"><a href="../films.html">Фильмы</a></li>
+      <li><a href="#">Сериалы</a></li>
+      <li><a href="../rating.html">Рейтинг фильмов</a></li>
+      <li><a href="../contact.html">Контакты</a></li>
+    </ul>
+  </div>
+
+  <div class="site_content">
+    <div class="sidebar_container">
+      <div class="sidebar">
+        <h2>Поиск</h2>
+        <form method="post" action="#" id="search_form">
+          <input type="search" name="search_field" placeholder="Ваш запрос" />
+          <input type="submit" class="btn" value="Найти" />
+        </form>
+      </div>
+
+      <div class="sidebar">
+        <h2>Вход</h2>
+        <form method="post" action="#" id="login">
+          <input type="text" name="login_field" placeholder="Логин" />
+          <input type="password" name="password_field" placeholder="Пароль" />
+          <input type="submit" class="btn" value="Вход" />
+          <div class="labels_passreg_text">
+            <span><a href="#">Забыли пароль?</a></span>
+            <span><a href="#">Регистрация</a></span>
+          </div>
+        </form>
+      </div>
+
+      <div class="sidebar">
+        <h2>Новости</h2>
+        <span>31.02.2018</span>
+        <p>Мы запустили расширенный поиск!</p>
+        <a href="#">Читать</a>
+      </div>
+
+      <div class="sidebar">
+        <h2>Рейтинг фильмов</h2>
+        <ul>
+          <li><a href="interstellar.html">Интерстеллар</a><span class="rating_sidebar">8.1</span></li>
+          <li><a href="#">Матрица</a><span class="rating_sidebar">8.0</span></li>
+          <li><a href="#">Безумный макс</a><span class="rating_sidebar">7.5</span></li>
+          <li><a href="#">Облачный атлас</a><span class="rating_sidebar">7.4</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content">
+      <h1>Матрица</h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/vKQi3bBA1y8?showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+      <div class="info_film_page">
+        <span class="label">Рейтинг:</span><span class="value">8.0 / 10</span><br>
+        <span class="label">Год:</span><span class="value">1999</span><br>
+        <span class="label">Режиссеры:</span><span class="value">Лана и Лилли Вачовски</span>
+      </div>
+      <hr>
+      <h2>Описание Матрицы</h2>
+      <div class="descriptions_film">
+        <img src="../assets/img/matrix.png" alt="Матрица">
+        <p>Хакер по имени Нео обнаруживает, что его мир — это симуляция, созданная машинами, которые используют человеческую энергию. Нео присоединяется к мятежникам, чтобы освободить человечество и противостоять Матрице.</p>
+      </div>
+      <hr>
+      <h2>Отзывы о Матрице</h2>
+      <div class="reviews">
+        <div class="review_name">Алексей</div>
+        <div class="review_text">Впечатляющий фильм, который меняет восприятие реальности.</div>
+      </div>
+
+      <div class="reviews">
+        <div class="review_name">Ирина</div>
+        <div class="review_text">Культовый фильм, который остается актуальным и сегодня.</div>
+      </div>
+
+      <div class="send">
+        <form method="post" action="#" id="review">
+          <input type="text" name="review_name" placeholder="Ваше имя">
+          <textarea name="review_text" placeholder="Ваш отзыв"></textarea>
+          <input class="btn" type="submit" value="Отправить">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>
+      <a href="../index.html">Главная</a> |
+      <a href="../films.html">Фильмы</a> |
+      <a href="#">Сериалы</a> |
+      <a href="../rating.html">Рейтинг фильмов</a> |
+      <a href="../contact.html">Контакты</a>
+    </p>
+    <p>kinopoisk.ru</p>
+  </div>
+</div>
+
+</body>
+</html>

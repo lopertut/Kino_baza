@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TV Shows</title>
+  <meta name="description" content="KinoBaza - a portal about movies and TV shows">
+  <meta name="keywords" content="tv shows, online shows, HD">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo_text">
+      <h1><a href="index_eng.html">KinoBaza</a></h1>
+      <h2>Movies and TV shows - our passion!</h2>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <ul class="menu">
+    <li><a href="index_eng.html">Home</a></li>
+    <li><a href="films.html">Movies</a></li>
+    <li class="selected"><a href="../eng/serials.html">TV Shows</a></li>
+    <li><a href="rating.html">TV Show Ratings</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="../serials.html">RU</a></li>
+  </ul>
+</nav>
+
+
+<main>
+  <aside class="sidebar_container">
+    <section class="sidebar">
+      <h2>Search</h2>
+      <form method="post" action="serials.html" id="search_form">
+        <input type="search" name="search-field" placeholder="Your query" />
+        <input type="submit" class="btn" value="Search" />
+      </form>
+    </section>
+
+    <section class="sidebar">
+      <h2>Login</h2>
+      <form method="post" action="serials.html" id="login">
+        <input type="text" name="login_field" placeholder="Username"/>
+        <input type="password" name="password_field" placeholder="Password"/>
+        <input type="submit" class="btn" value="Login" />
+        <div class="labels_passreg_text">
+          <span><a href="serials.html">Forgot password?</a></span> | <span><a href="serials.html">Register</a></span>
+        </div>
+      </form>
+    </section>
+
+    <section class="sidebar">
+      <h2>News</h2>
+      <span>31.02.2018</span>
+      <p>We launched an advanced search!</p>
+      <a href="serials.html">Read more</a>
+    </section>
+
+    <section class="sidebar">
+      <h2>Top Rated TV Shows</h2>
+      <ul>
+        <li><a href="serials/walking_dead.html">The Walking Dead</a><span class="rating_sidebar"> 8.2</span></li>
+        <li><a href="serials/silicon_valley.html">Silicon Valley</a><span class="rating_sidebar"> 8.5</span></li>
+        <li><a href="serials/breaking_bad.html">Breaking Bad</a><span class="rating_sidebar"> 9.5</span></li>
+        <li><a href="serials/x_files.html">The X-Files</a><span class="rating_sidebar"> 8.6</span></li>
+      </ul>
+    </section>
+  </aside>
+
+  <section class="content">
+    <h1>New TV Shows</h1>
+    <article class="info_show">
+      <a href="serials/walking_dead.html"><img src="assets/img/dead.png" alt="The Walking Dead"></a>
+      <p>A show about a group of survivors in a post-apocalyptic world filled with zombies.</p>
+    </article>
+    <article class="info_show">
+      <a href="serials/silicon_valley.html"><img src="assets/img/silicon.png" alt="Silicon Valley"></a>
+      <p>A comedy show about startups in Silicon Valley and the lives of their creators.</p>
+    </article>
+    <article class="info_show">
+      <a href="serials/breaking_bad.html"><img src="assets/img/breakingbad.png" alt="Breaking Bad"></a>
+      <p>A show about a chemistry teacher who becomes a meth producer.</p>
+    </article>
+    <article class="info_show">
+      <a href="serials/x_files.html"><img src="assets/img/xfiles.png" alt="The X-Files"></a>
+      <p>A show about two FBI agents investigating paranormal phenomena.</p>
+    </article>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>
+    <a href="index.html">Home</a> |
+    <a href="films.html">Movies</a> |
+    <a href="serials.html">TV Shows</a> |
+    <a href="rating.html">TV Show Ratings</a> |
+    <a href="contact.html">Contact</a>
+  </p>
+</footer>
+
+</body>
+</html>
