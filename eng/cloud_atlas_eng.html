@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cloud Atlas Movie</title>
+  <meta name="description" content="KinoBaza - a cinema portal" />
+  <meta name="keywords" content="movies, online movies, hd" />
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+<!-- Site Header -->
+<header>
+  <div class="logo">
+    <div class="logo_text">
+      <h1><a href="../index.html">KinoBaza</a></h1>
+      <h2>Cinema is our passion!</h2>
+    </div>
+  </div>
+</header>
+
+<!-- Navigation Menu -->
+<nav class="menubar">
+  <ul class="menu">
+    <li><a href="../index.html">Home</a></li>
+    <li class="selected"><a href="../films.html">Movies</a></li>
+    <li><a href="../serials.html">TV Shows</a></li>
+    <li><a href="../rating.html">Movie Ratings</a></li>
+    <li><a href="../contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  <!-- Sidebar -->
+  <aside class="sidebar_container">
+    <section class="sidebar">
+      <h2>Search</h2>
+      <form method="post" action="#" id="search_form">
+        <input type="search" name="search_field" placeholder="Your query" />
+        <input type="submit" class="btn" value="Search" />
+      </form>
+    </section>
+
+    <section class="sidebar">
+      <h2>Login</h2>
+      <form method="post" action="#" id="login">
+        <input type="text" name="login_field" placeholder="Username" />
+        <input type="password" name="password_field" placeholder="Password" />
+        <input type="submit" class="btn" value="Login" />
+        <div class="labels_passreg_text">
+          <span><a href="#">Forgot password?</a></span>
+          <span><a href="#">Sign up</a></span>
+        </div>
+      </form>
+    </section>
+
+    <section class="sidebar">
+      <h2>News</h2>
+      <span>02/31/2018</span>
+      <p>We launched an advanced search!</p>
+      <a href="#">Read more</a>
+    </section>
+
+    <section class="sidebar">
+      <h2>Movie Ratings</h2>
+      <ul>
+        <li><a href="intestaler.html">Interstellar</a><span class="rating_sidebar">8.1</span></li>
+        <li><a href="matrix.html">The Matrix</a><span class="rating_sidebar">8.0</span></li>
+        <li><a href="max.html">Mad Max</a><span class="rating_sidebar">7.5</span></li>
+        <li><a href="#">Cloud Atlas</a><span class="rating_sidebar">7.4</span></li>
+      </ul>
+    </section>
+  </aside>
+
+  <!-- Page Content -->
+  <section class="content">
+    <h1>Cloud Atlas</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/hWnAqFyaQ5s?showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+    <div class="info_film_page">
+      <span class="label">Rating:</span><span class="value">7.4 / 10</span><br>
+      <span class="label">Year:</span><span class="value">2012</span><br>
+      <span class="label">Directors:</span><span class="value">Lana and Lilly Wachowski, Tom Tykwer</span>
+    </div>
+    <hr>
+    <h2>Description of Cloud Atlas</h2>
+    <section class="descriptions_film">
+      <img src="../assets/img/cloud.png" alt="Cloud Atlas">
+      <p>The film connects several stories from the past, present, and future, showing how the actions and consequences of individual lives can influence each other across centuries, shaping humanity's future.</p>
+    </section>
+    <hr>
+    <h2>Cloud Atlas Reviews</h2>
+    <article class="reviews">
+      <div class="review_name">Maria</div>
+      <div class="review_text">This film makes you think about our connection with the past and future. A magnificent piece!</div>
+    </article>
+
+    <article class="reviews">
+      <div class="review_name">Oleg</div>
+      <div class="review_text">A unique, multilayered film. Amazing actors and visual style.</div>
+    </article>
+
+    <section class="send">
+      <form method="post" action="#" id="review">
+        <input type="text" name="review_name" placeholder="Your name">
+        <textarea name="review_text" placeholder="Your review"></textarea>
+        <input class="btn" type="submit" value="Submit">
+      </form>
+    </section>
+  </section>
+</main>
+
+<!-- Site Footer -->
+<footer class="footer">
+  <p>
+    <a href="../index.html">Home</a> |
+    <a href="../films.html">Movies</a> |
+    <a href="../serials.html">TV Shows</a> |
+    <a href="../rating.html">Movie Ratings</a> |
+    <a href="../contact.html">Contact</a>
+  </p>
+  <p>kinopoisk.ru</p>
+</footer>
+
+</body>
+</html>
