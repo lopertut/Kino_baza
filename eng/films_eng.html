@@ -1,107 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Movies</title>
-  <meta name="description" content="KinoBaza - a portal about movies" />
-  <meta name="keywords" content="movies, online movies, hd" />
-  <link rel="stylesheet" href="../assets/css/styles.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movies</title>
+
+    <!-- Bootstrap -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="../assets/css/style.css" rel="stylesheet">
 </head>
 <body>
 
-<header>
-  <div class="logo">
-    <div class="logo_text">
-      <h1><a href="index_eng.html">KinoBaza</a></h1>
-      <h2>Movies - our passion!</h2>
-    </div>
-  </div>
-</header>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
 
-<nav>
-  <ul class="menu">
-    <li><a href="index_eng.html">Home</a></li>
-    <li class="selected"><a href="films_eng.html">Movies</a></li>
-    <li><a href="serials_eng.html">TV Shows</a></li>
-    <li><a href="rating_eng.html">Movie Ratings</a></li>
-    <li><a href="contact_eng.html">Contact</a></li>
-    <li><a href="../films.html">RU</a></li>
-  </ul>
-</nav>
+                <nav role="navigation" class="navbar navbar-inverse">
+                    <div class="container">
 
-<main>
-  <aside class="sidebar_container">
-    <div class="sidebar">
-      <h2>Search</h2>
-      <form method="post" action="#" id="search_form">
-        <input type="search" name="search_field" placeholder="Your query" />
-        <input type="submit" class="btn" value="Search" />
-      </form>
-    </div>
+                        <div class="navbar-header header">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h1><a href="index_en.html">KinoBase</a></h1>
+                                        <p>Movies are our passion!</p>
+                                    </div>
+                                </div>
+                            </div>
 
-    <div class="sidebar">
-      <h2>Login</h2>
-      <form method="post" action="#" id="login">
-        <input type="text" name="login_field" placeholder="Username" />
-        <input type="password" name="password_field" placeholder="Password" />
-        <input type="submit" class="btn" value="Login" />
-        <div class="labels_passreg_text">
-          <span><a href="#">Forgot password?</a></span>
-          <span><a href="#">Register</a></span>
+                            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div id="navbarCollapse" class="collapse navbar-collapse navbar-right">
+                            <ul class="nav nav-pills">
+                                <li> <a href="index_eng.html">Home</a> </li>
+                                <li class="active"> <a href="#">Movies</a> </li>
+                                <li> <a href="serials_eng.html">Series</a> </li>
+                                <li> <a href="rating_eng.html">Movie Ratings</a> </li>
+                                <li> <a href="contact_eng.html">Contact</a> </li>
+                                <li><a href="../films.html">Русский</a>
+                            </ul>
+                        </div>
+
+                    </div>
+                </nav>
+
+            </div>
         </div>
-      </form>
-    </div>
+    </header>
 
-    <div class="sidebar">
-      <h2>News</h2>
-      <span>31.02.2018</span>
-      <p>We have launched an advanced search!</p>
-      <a href="#">Read more</a>
-    </div>
+    <main>
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <section class="col-lg-9 col-lg-push-3"> <!-- Swap columns col-lg-push-3 -->
 
-    <div class="sidebar">
-      <h2>Movie Ratings</h2>
-      <ul>
-        <li><a href="intesteler_eng.html">Interstellar</a><span class="rating_sidebar">8.1</span></li>
-        <li><a href="matrix_eng.html">The Matrix</a><span class="rating_sidebar">8.0</span></li>
-        <li><a href="max_eng.html">Mad Max</a><span class="rating_sidebar">7.5</span></li>
-        <li><a href="cloud_atlas_eng.html">Cloud Atlas</a><span class="rating_sidebar">7.4</span></li>
-      </ul>
-    </div>
-  </aside>
+                        <form role="search" class="visible-xs">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="search" class="form-control input-lg" placeholder="Your query">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default btn-lg" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
 
-  <section class="content">
-    <div class="info_film">
-      <a href="intesteler_eng.html"><img src="../assets/img/inter.png"></a>
-      <p>When Earth faces an ecological catastrophe, a group of astronauts and scientists embarks on a journey through a wormhole in search of a new planet suitable for human life. The film raises questions about love, time, and survival.</p>
-    </div>
+                        <h1>Movies</h1>
 
-    <div class="info_film">
-      <a href="max_eng.html"><img src="../assets/img/max.png"></a>
-      <p>In a world consumed by chaos and lack of resources, Max, a loner, confronts brutal gangs to help a group of women striving for freedom. The movie is filled with thrilling chases and an incredible post-apocalyptic atmosphere.</p>
-    </div>
+                        <div class="row">
+                            <article class="well clearfix">
+                                <div class="col-lg-3 col-md-2 text-center">
+                                    <img class="img-thumbnail" src="assets/img/inter.png" alt="Interstellar">
+                                    <p>Interstellar</p>
+                                </div>
+                                <div class="col-lg-9 col-md-10">
+                                    <p>
+                                        When drought brings humanity to a food crisis, a team of researchers and scientists ventures through a wormhole ...
+                                    </p>
+                                    <div class="col-lg-12 col-md-12">
+                                        <a href="show_en.html" class="btn btn-lg btn-warning pull-right">more details</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
 
-    <div class="info_film">
-      <a href="matrix_eng.html"><img src="../assets/img/matrix.png"></a>
-      <p>Neo, a hacker, discovers that the world he lives in is just an illusion created by artificial intelligence to enslave humanity. Together with a group of rebels, he starts a fight for the freedom of humans and the truth about "The Matrix".</p>
-    </div>
+                        <div class="row">
+                            <article class="well clearfix">
+                                <div class="col-lg-3 col-md-2 text-center">
+                                    <img class="img-thumbnail" src="assets/img/matrix.png" alt="Matrix">
+                                    <p>Matrix</p>
+                                </div>
+                                <div class="col-lg-9 col-md-10">
+                                    <p>
+                                        When drought brings humanity to a food crisis, a team of researchers and scientists ventures through a wormhole ...
+                                    </p>
+                                    <div class="col-lg-12 col-md-12">
+                                        <a href="matrix_en.html" class="btn btn-lg btn-warning pull-right">more details</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
 
-    <div class="info_film">
-      <a href="cloud_atlas_eng.html"><img src="../assets/img/cloud.png"></a>
-      <p>The film explores six interwoven stories occurring in different times and places. It is a story about fate, free will, and how the actions of one person can influence the future of generations. "Cloud Atlas" is a reflection on the interconnectedness of all lives.</p>
-    </div>
-  </section>
-</main>
+                        <div class="row">
+                            <article class="well clearfix">
+                                <div class="col-lg-3 col-md-2 text-center">
+                                    <img class="img-thumbnail" src="assets/img/cloud.png" alt="Cloud Atlas">
+                                    <p>Cloud Atlas</p>
+                                </div>
+                                <div class="col-lg-9 col-md-10">
+                                    <p>
+                                        When drought brings humanity to a food crisis, a team of researchers and scientists ventures through a wormhole ...
+                                    </p>
+                                    <div class="col-lg-12 col-md-12">
+                                        <a href="cloud_en.html" class="btn btn-lg btn-warning pull-right">more details</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
 
-<footer>
-  <p>
-    <a href="#">Home</a> |
-    <a href="films_eng.html">Movies</a> |
-    <a href="serials_eng.html">TV Shows</a> |
-    <a href="rating_eng.html">Movie Ratings</a> |
-    <a href="contact_eng.html">Contact</a>
-  </p>
-  <p>kinopoisk.ru</p>
-</footer>
+                        <div class="row">
+                            <article class="well clearfix">
+                                <div class="col-lg-3 col-md-2 text-center">
+                                    <img class="img-thumbnail" src="assets/img/max.png" alt="Mad Max">
+                                    <p>Mad Max</p>
+                                </div>
+                                <div class="col-lg-9 col-md-10">
+                                    <p>
+                                        When drought brings humanity to a food crisis, a team of researchers and scientists ventures through a wormhole ...
+                                    </p>
+                                    <div class="col-lg-12 col-md-12">
+                                        <a href="max_en.html" class="btn btn-lg btn-warning pull-right">more details</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="margin-8 clear"></div>
+
+                    </section>
+
+                    <aside class="col-lg-3 col-lg-pull-9"> <!-- Swap columns col-lg-pull-9 -->
+
+                        <div class="panel panel-info hidden-xs">
+                            <div class="panel-heading"><div class="sidebar-header">Search</div></div>
+                            <div class="panel-body">
+                                <form role="search">
+                                    <div class="form-group">
+                                        <input type="search" class="form-control input-lg" placeholder="Your query">
+                                    </div>
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default btn-lg" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-info">
+                            <div class="panel-heading"><div class="sidebar-header">Login</div></div>
+                            <div class="panel-body">
+                                <form role="form">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control input-lg" placeholder="Username">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control input-lg" placeholder="Password">
+                                    </div>
+                                    <button type="submit" class="btn btn-warning pull-right">login</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-info">
+                            <div class="panel-heading"><div class="sidebar-header">News</div></div>
+                            <div class="panel-body">
+                                <p>02.31.2017</p>
+                                <p>We launched a new service</p>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-info">
+                            <div class="panel-heading"><div class="sidebar-header">Movie Ratings</div></div>
+                            <div class="panel-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item list-group-warning">
+                                        <span class="badge">8.9</span>
+                                        <a href="show_en.html">Interstellar</a>
+                                    </li>
+                                    <li class="list-group-item list-group-warning">
+                                        <span class="badge">8.7</span>
+                                        <a href="max_en.html">Mad Max</a>
+                                    </li>
+                                    <li class="list-group-item list-group-warning">
+                                        <span class="badge">8.3</span>
+                                        <a href="matrix_en.html">Matrix</a>
+                                    </li>
+                                    <li class="list-group-item list-group-warning">
+                                        <span class="badge">8.1</span>
+                                        <a href="cloud_en.html">Cloud Atlas</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="text-center"> <a href="https://www.kinopoisk.ru/">KinoBase</a> </p>
+        </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>

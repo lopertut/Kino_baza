@@ -1,104 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact</title>
-  <meta name="description" content="CineBase - a movie portal" />
-  <meta name="keywords" content="movies, movies online, hd" />
-  <link rel="stylesheet" href="../assets/css/styles.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+
+    <!-- Bootstrap -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="../assets/css/style.css" rel="stylesheet">
 </head>
 <body>
 
-<!-- Website header -->
-<header>
-  <div class="logo">
-    <div class="logo_text">
-      <h1><a href="index.html">CineBase</a></h1>
-      <h2>Movies are our passion!</h2>
-    </div>
-  </div>
-</header>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
 
-<!-- Navigation menu -->
-<nav class="menubar">
-  <ul class="menu">
-    <li><a href="index_eng.html">Home</a></li>
-    <li><a href="films_eng.html">Movies</a></li>
-    <li><a href="serials_eng.html">TV Series</a></li>
-    <li><a href="rating_eng.html">Movie Rating</a></li>
-    <li class="selected"><a href="../contact.html">Contact</a></li>
-  </ul>
-</nav>
+                <nav role="navigation" class="navbar navbar-inverse">
+                    <div class="container">
 
-<main>
-  <!-- Sidebar -->
-  <aside class="sidebar_container">
-    <section class="sidebar">
-      <h2>Search</h2>
-      <form method="post" action="#" id="search_form">
-        <input type="search" name="search_field" placeholder="Your query" />
-        <input type="submit" class="btn" value="Search" />
-      </form>
-    </section>
+                        <div class="navbar-header header">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h1><a href="index_en.html">KinoBase</a></h1>
+                                        <p>Movies are our passion!</p>
+                                    </div>
+                                </div>
+                            </div>
 
-    <section class="sidebar">
-      <h2>Login</h2>
-      <form method="post" action="#" id="login">
-        <input type="text" name="login_field" placeholder="Username" />
-        <input type="password" name="password_field" placeholder="Password" />
-        <input type="submit" class="btn" value="Login" />
-        <div class="labels_passreg_text">
-          <span><a href="#">Forgot password?</a></span>
-          <span><a href="#">Register</a></span>
+                            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div id="navbarCollapse" class="collapse navbar-collapse navbar-right">
+                            <ul class="nav nav-pills">
+                                <li> <a href="index_eng.html">Home</a> </li>
+                                <li> <a href="films_eng.html">Movies</a> </li>
+                                <li> <a href="serials_eng.html">Series</a> </li>
+                                <li> <a href="rating_eng.html">Movie Ratings</a> </li>
+                                <li class="active"> <a href="#">Contact</a> </li>
+                                <li><a href="../contact.html">Русский</a>
+                            </ul>
+                        </div>
+
+                    </div>
+                </nav>
+
+            </div>
         </div>
-      </form>
-    </section>
+    </header>
 
-    <section class="sidebar">
-      <h2>News</h2>
-      <span>31.02.2018</span>
-      <p>We launched an advanced search!</p>
-      <a href="#">Read more</a>
-    </section>
+    <main>
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <section class="col-lg-9 col-lg-push-3"> <!-- Swap columns col-lg-push-3 -->
 
-    <section class="sidebar">
-      <h2>Movie Rating</h2>
-      <ul>
-        <li><a href="films/interstaller.html">Interstellar</a><span class="rating_sidebar">8.1</span></li>
-        <li><a href="films/matrix.html">The Matrix</a><span class="rating_sidebar">8.0</span></li>
-        <li><a href="films/max.html">Mad Max</a><span class="rating_sidebar">7.5</span></li>
-        <li><a href="films/cloud_atlas.html">Cloud Atlas</a><span class="rating_sidebar">7.4</span></li>
-      </ul>
-    </section>
-  </aside>
+                        <form role="search" class="visible-xs">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="search" class="form-control input-lg" placeholder="Your query">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default btn-lg" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
 
-  <!-- Page content -->
-  <section class="content">
-    <h1>Contact</h1>
-    <p>Send us your feedback about the CineMonster portal</p>
+                        <h1>Contact</h1>
+                        <hr>
+                        <p>Send us your feedback about the KinoBase portal</p>
 
-    <section class="send send_contact">
-      <form method="post" action="#" id="contact">
-        <input type="text" name="review_name" placeholder="Your name">
-        <input type="text" name="review_email" placeholder="Your email">
-        <textarea name="review_text" placeholder="Your feedback"></textarea>
-        <input class="btn" type="submit" value="Send">
-      </form>
-    </section>
-  </section>
-</main>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" placeholder="Your name" class="form-control input-lg">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your email" class="form-control input-lg">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control"></textarea>
+                            </div>
+                            <button class="btn btn-lg btn-warning pull-right">Send</button>
+                        </form>
 
-<!-- Footer -->
-<footer class="footer">
-  <p>
-    <a href="index.html">Home</a> |
-    <a href="films.html">Movies</a> |
-    <a href="serials.html">TV Series</a> |
-    <a href="rating.html">Movie Rating</a> |
-    <a href="contact.html">Contact</a>
-  </p>
-  <p>kinopoisk.ru</p>
-</footer>
+                        <div class="margin-8 clear"></div>
 
+                    </section>
+
+                    <aside class="col-lg-3 col-lg-pull-9"> <!-- Swap columns col-lg-pull-9 -->
+
+                        <div class="panel panel-info hidden-xs">
+                            <div class="panel-heading"><div class="sidebar-header">Search</div></div>
+                            <div class="panel-body">
+                                <form role="search">
+                                    <div class="form-group">
+                                        <input type="search" class="form-control input-lg" placeholder="Your query">
+                                    </div>
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default btn-lg" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-info">
+                            <div class="panel-heading"><div class="sidebar-header">Login</div></div>
+                            <div class="panel-body">
+                                <form role="form">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control input-lg" placeholder="Username">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control input-lg" placeholder="Password">
+                                    </div>
+                                    <button type="submit" class="btn btn-warning pull-right">Login</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-info">
+                            <div class="panel-heading"><div class="sidebar-header">News</div></div>
+                            <div class="panel-body">
+                                <p>02.31.2017</p>
+                                <p>We launched a new service</p>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-info">
+                            <div class="panel-heading"><div class="sidebar-header">Movie Ratings</div></div>
+                            <div class="panel-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item list-group-warning">
+                                        <span class="badge">8.9</span>
+                                        <a href="show_en.html">Interstellar</a>
+                                    </li>
+                                    <li class="list-group-item list-group-warning">
+                                        <span class="badge">8.7</span>
+                                        <a href="max_en.html">Mad Max</a>
+                                    </li>
+                                    <li class="list-group-item list-group-warning">
+                                        <span class="badge">8.3</span>
+                                        <a href="matrix_en.html">Matrix</a>
+                                    </li>
+                                    <li class="list-group-item list-group-warning">
+                                        <span class="badge">8.1</span>
+                                        <a href="cloud_en.html">Cloud Atlas</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="text-center"> <a href="https://www.kinopoisk.ru/">KinoBase</a> </p>
+        </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>

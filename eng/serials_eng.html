@@ -1,106 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>TV Shows</title>
-  <meta name="description" content="KinoBaza - a portal about movies and TV shows">
-  <meta name="keywords" content="tv shows, online shows, HD">
-  <link rel="stylesheet" href="../assets/css/styles.css">
-</head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Series</title>
 
+    <!-- Bootstrap -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+</head>
 <body>
 
-<header>
-  <div class="logo">
-    <div class="logo_text">
-      <h1><a href="index_eng.html">KinoBaza</a></h1>
-      <h2>Movies and TV shows - our passion!</h2>
-    </div>
-  </div>
-</header>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
 
-<nav>
-  <ul class="menu">
-    <li><a href="index_eng.html">Home</a></li>
-    <li><a href="films_eng.html">Movies</a></li>
-    <li class="selected"><a href="#">TV Shows</a></li>
-    <li><a href="rating_eng.html">TV Show Ratings</a></li>
-    <li><a href="contact_eng.html">Contact</a></li>
-    <li><a href="../serials.html">RU</a></li>
-  </ul>
-</nav>
+                <nav role="navigation" class="navbar navbar-inverse">
+                    <div class="container">
 
+                        <div class="navbar-header header">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h1><a href="index_eng.html">KinoBase</a></h1>
+                                        <p>Movies are our passion!</p>
+                                    </div>
+                                </div>
+                            </div>
 
-<main>
-  <aside class="sidebar_container">
-    <section class="sidebar">
-      <h2>Search</h2>
-      <form method="post" action="serials.html" id="search_form">
-        <input type="search" name="search-field" placeholder="Your query" />
-        <input type="submit" class="btn" value="Search" />
-      </form>
-    </section>
+                            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
 
-    <section class="sidebar">
-      <h2>Login</h2>
-      <form method="post" action="serials.html" id="login">
-        <input type="text" name="login_field" placeholder="Username"/>
-        <input type="password" name="password_field" placeholder="Password"/>
-        <input type="submit" class="btn" value="Login" />
-        <div class="labels_passreg_text">
-          <span><a href="serials.html">Forgot password?</a></span> | <span><a href="serials.html">Register</a></span>
+                        <div id="navbarCollapse" class="collapse navbar-collapse navbar-right">
+                            <ul class="nav nav-pills">
+                                <li> <a href="index_eng.html">Home</a> </li>
+                                <li> <a href="films_eng.html">Movies</a> </li>
+                                <li class="active"> <a href="serials_eng.html">Series</a> </li>
+                                <li> <a href="rating_eng.html">Movie Ratings</a> </li>
+                                <li> <a href="contact_eng.html">Contact</a> </li>
+                                <li><a href="../serials.html">Русский</a>
+                            </ul>
+                        </div>
+
+                    </div>
+                </nav>
+
+            </div>
         </div>
-      </form>
-    </section>
+    </header>
 
-    <section class="sidebar">
-      <h2>News</h2>
-      <span>31.02.2018</span>
-      <p>We launched an advanced search!</p>
-      <a href="serials.html">Read more</a>
-    </section>
+    <main>
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <section class="col-lg-9 col-lg-push-3"> <!-- Swap columns col-lg-push-3 -->
 
-    <section class="sidebar">
-      <h2>Top Rated TV Shows</h2>
-      <ul>
-        <li><a href="walking_dead_eng.html">The Walking Dead</a><span class="rating_sidebar"> 8.2</span></li>
-        <li><a href="silicon_valley_eng.html">Silicon Valley</a><span class="rating_sidebar"> 8.5</span></li>
-        <li><a href="breaking_bad_eng.html">Breaking Bad</a><span class="rating_sidebar"> 9.5</span></li>
-        <li><a href="x_files_eng.html">The X-Files</a><span class="rating_sidebar"> 8.6</span></li>
-      </ul>
-    </section>
-  </aside>
+                        <form role="search" class="visible-xs">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="search" class="form-control input-lg" placeholder="Your query">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default btn-lg" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
 
-  <section class="content">
-    <h1>New TV Shows</h1>
-    <article class="info_show">
-      <a href="walking_dead_eng.html"><img src="../assets/img/dead.png" alt="The Walking Dead"></a>
-      <p>A show about a group of survivors in a post-apocalyptic world filled with zombies.</p>
-    </article>
-    <article class="info_show">
-      <a href="silicon_valley_eng.html"><img src="../assets/img/silicon.png" alt="Silicon Valley"></a>
-      <p>A comedy show about startups in Silicon Valley and the lives of their creators.</p>
-    </article>
-    <article class="info_show">
-      <a href="breaking_bad_eng.html"><img src="../assets/img/breakingbad.png" alt="Breaking Bad"></a>
-      <p>A show about a chemistry teacher who becomes a meth producer.</p>
-    </article>
-    <article class="info_show">
-      <a href="x_files_eng.html"><img src="../  assets/img/xfiles.png" alt="The X-Files"></a>
-      <p>A show about two FBI agents investigating paranormal phenomena.</p>
-    </article>
-  </section>
-</main>
+                        <h1>Series</h1>
+                        <hr>
 
-<footer class="footer">
-  <p>
-    <a href="index.html">Home</a> |
-    <a href="films.html">Movies</a> |
-    <a href="serials.html">TV Shows</a> |
-    <a href="rating.html">TV Show Ratings</a> |
-    <a href="contact.html">Contact</a>
-  </p>
-</footer>
+                        <div class="row">
+                            <article class="well clearfix">
+                                <div class="col-lg-3 col-md-2 text-center">
+                                    <img class="img-thumbnail" src="assets/img/xfiles.png" alt="The X-Files">
+                                    <p>The X-Files</p>
+                                </div>
+                                <div class="col-lg-9 col-md-10">
+                                    <p>
+                                        A series about FBI agents Mulder and Scully investigating paranormal phenomena.
+                                    </p>
+                                    <div class="col-lg-12 col-md-12">
+                                        <a href="xfiles_en.html" class="btn btn-lg btn-warning pull-right">more details</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
 
+                        <div class="row">
+                            <article class="well clearfix">
+                                <div class="col-lg-3 col-md-2 text-center">
+                                    <img class="img-thumbnail" src="assets/img/dead.png" alt="The Walking Dead">
+                                    <p>The Walking Dead</p>
+                                </div>
+                                <div class="col-lg-9 col-md-10">
+                                    <p>
+                                        The story of a group of survivors fighting for life and adapting to a new world after a zombie apocalypse.
+                                    </p>
+                                    <div class="col-lg-12 col-md-12">
+                                        <a href="dead_en.html" class="btn btn-lg btn-warning pull-right">more details</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="row">
+                            <article class="well clearfix">
+                                <div class="col-lg-3 col-md-2 text-center">
+                                    <img class="img-thumbnail" src="assets/img/silicon.png" alt="Silicon Valley">
+                                    <p>Silicon Valley</p>
+                                </div>
+                                <div class="col-lg-9 col-md-10">
+                                    <p>
+                                        A comedy series about young developers trying to create a startup in Silicon Valley.
+                                    </p>
+                                    <div class="col-lg-12 col-md-12">
+                                        <a href="silicon_en.html" class="btn btn-lg btn-warning pull-right">more details</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="row">
+                            <article class="well clearfix">
+                                <div class="col-lg-3 col-md-2 text-center">
+                                    <img class="img-thumbnail" src="assets/img/breakingbad.png" alt="Breaking Bad">
+                                    <p>Breaking Bad</p>
+                                </div>
+                                <div class="col-lg-9 col-md-10">
+                                    <p>
+                                        The story of a chemistry teacher who, after learning of a terminal diagnosis, decides to start producing methamphetamine to provide for his family.
+                                    </p>
+                                    <div class="col-lg-12 col-md-12">
+                                        <a href="breakingbad_en.html" class="btn btn-lg btn-warning pull-right">more details</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="margin-8 clear"></div>
+
+                    </section>
+
+                    <aside class="col-lg-3 col-lg-pull-9"> <!-- Swap columns col-lg-pull-9 -->
+
+                        <div class="panel panel-info hidden-xs">
+                            <div class="panel-heading"><div class="sidebar-header">Search</div></div>
+                            <div class="panel-body">
+                                <form role="search">
+                                    <div class="form-group">
+                                        <input type="search" class="form-control input-lg" placeholder="Your query">
+                                    </div>
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default btn-lg" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-info">
+                            <div class="panel-heading"><div class="sidebar-header">Login</div></div>
+                            <div class="panel-body">
+                                <form role="form">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control input-lg" placeholder="Username">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control input-lg" placeholder="Password">
+                                    </div>
+                                    <button type="submit" class="btn btn-warning pull-right">login</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-info">
+                            <div class="panel-heading"><div class="sidebar-header">News</div></div>
+                            <div class="panel-body">
+                                <p>02.31.2017</p>
+                                <p>We launched a new service</p>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-info">
+                            <div class="panel-heading"><div class="sidebar-header">Movie Ratings</div></div>
+                            <div class="panel-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item list-group-warning">
+                                        <span class="badge">8.9</span>
+                                        <a href="show_en.html">Interstellar</a>
+                                    </li>
+                                    <li class="list-group-item list-group-warning">
+                                        <span class="badge">8.7</span>
+                                        <a href="max_en.html">Mad Max</a>
+                                    </li>
+                                    <li class="list-group-item list-group-warning">
+                                        <span class="badge">8.3</span>
+                                        <a href="matrix_en.html">Matrix</a>
+                                    </li>
+                                    <li class="list-group-item list-group-warning">
+                                        <span class="badge">8.1</span>
+                                        <a href="cloud_en.html">Cloud Atlas</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="text-center"> <a href="https://www.kinopoisk.ru/">KinoBase</a> </p>
+        </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>
