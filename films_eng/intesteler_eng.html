@@ -1,126 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Interstellar Movie</title>
-  <meta name="description" content="KinoBaza - a cinema portal" />
-  <meta name="keywords" content="movies, online movies, hd" />
-  <link rel="stylesheet" href="../assets/css/styles.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Movie</title>
+
+  <!-- Bootstrap -->
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Main Style -->
+  <link href="../assets/css/style.css" rel="stylesheet">
 </head>
 <body>
 
-<!-- Site Header -->
 <header>
-  <div class="logo">
-    <div class="logo_text">
-      <h1><a href="../index.html">KinoBaza</a></h1>
-      <h2>Cinema is our passion!</h2>
+  <div class="container-fluid">
+    <div class="row">
+      <nav role="navigation" class="navbar navbar-inverse">
+        <div class="container">
+          <div class="navbar-header header">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <h1><a href="../index.html">KinoBase</a></h1>
+                  <p>Movies are our passion!</p>
+                </div>
+              </div>
+            </div>
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <div id="navbarCollapse" class="collapse navbar-collapse navbar-right">
+            <ul class="nav nav-pills">
+              <li> <a href="../eng/index_eng.html">Home</a> </li>
+              <li class="active"> <a href="../eng/films_eng.html">Movies</a> </li>
+              <li> <a href="../eng/serials_eng.html">Series</a> </li>
+              <li> <a href="../eng/rating_eng.html">Movie Rating</a> </li>
+              <li> <a href="../contact.html">Contact</a> </li>
+              <li><a href="../films/intesteler.html">English</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
   </div>
 </header>
 
-<!-- Navigation Menu -->
-<nav class="menubar">
-  <ul class="menu">
-    <li><a href="../eng/index_eng.html">Home</a></li>
-    <li class="selected"><a href="../films.html">Movies</a></li>
-    <li><a href="../eng/serials_eng.html">TV Shows</a></li>
-    <li><a href="../eng/rating_eng.html">Movie Ratings</a></li>
-    <li><a href="../eng/contact_eng.html">Contact</a></li>
-  </ul>
-</nav>
-
 <main>
-  <!-- Sidebar -->
-  <aside class="sidebar_container">
-    <section class="sidebar">
-      <h2>Search</h2>
-      <form method="post" action="#" id="search_form">
-        <input type="search" name="search_field" placeholder="Your query" />
-        <input type="submit" class="btn" value="Search" />
-      </form>
-    </section>
+  <div class="wrapper">
+    <div class="container">
+      <div class="row">
+        <section class="col-lg-9 col-lg-push-3">
+          <form role="search" class="visible-xs">
+            <div class="form-group">
+              <div class="input-group">
+                <input type="search" class="form-control input-lg" placeholder="Your query">
+                <div class="input-group-btn">
+                  <button class="btn btn-default btn-lg" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                </div>
+              </div>
+            </div>
+          </form>
 
-    <section class="sidebar">
-      <h2>Login</h2>
-      <form method="post" action="#" id="login">
-        <input type="text" name="login_field" placeholder="Username" />
-        <input type="password" name="password_field" placeholder="Password" />
-        <input type="submit" class="btn" value="Login" />
-        <div class="labels_passreg_text">
-          <span><a href="#">Forgot password?</a></span>
-          <span><a href="#">Sign up</a></span>
-        </div>
-      </form>
-    </section>
+          <h1>Interstellar</h1>
+          <hr>
 
-    <section class="sidebar">
-      <h2>News</h2>
-      <span>02/31/2018</span>
-      <p>We launched an advanced search!</p>
-      <a href="#">Read more</a>
-    </section>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RsKHoe8gdo?showinfo=0" frameborder="0" allowfullscreen></iframe>
+          </div>
 
-    <section class="sidebar">
-      <h2>Movie Ratings</h2>
-      <ul>
-        <li><a href="interstellar.html">Interstellar</a><span class="rating_sidebar">8.1</span></li>
-        <li><a href="#">The Matrix</a><span class="rating_sidebar">8.0</span></li>
-        <li><a href="#">Mad Max</a><span class="rating_sidebar">7.5</span></li>
-        <li><a href="#">Cloud Atlas</a><span class="rating_sidebar">7.4</span></li>
-      </ul>
-    </section>
-  </aside>
+          <div class="well info-block text-center">
+            <span class="badge">2015</span>
+            Rating: <span class="badge">8.9</span>
+            Director: <span class="badge">Christopher Nolan</span>
+          </div>
 
-  <!-- Page Content -->
-  <section class="content">
-    <h1>Interstellar</h1>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/R5KHoE_8dgo?showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <div class="margin-8"></div>
 
-    <div class="info_film_page">
-      <span class="label">Rating:</span><span class="value">8.1 / 10</span><br>
-      <span class="label">Year:</span><span class="value">2014</span><br>
-      <span class="label">Director:</span><span class="value">Christopher Nolan</span>
+          <h2>Description of Interstellar</h2>
+          <div class="well">
+            When a drought brings humanity to a food crisis, a team of researchers and scientists venture through a wormhole...
+          </div>
+
+          <div class="margin-8"></div>
+
+          <h2>Reviews of Interstellar</h2>
+
+          <div class="panel panel-info">
+            <div class="panel-heading"><i class="glyphicon glyphicon-user"></i> <span>Sergey</span> </div>
+            <div class="panel-body">
+              Great movie, 3 hours flew by unnoticed.
+            </div>
+          </div>
+
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="Your name" class="form-control input-lg">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control"></textarea>
+            </div>
+            <button class="btn btn-lg btn-warning pull-right">Submit</button>
+          </form>
+
+          <div class="margin-8 clear"></div>
+        </section>
+
+        <aside class="col-lg-3 col-lg-pull-9">
+          <div class="panel panel-info hidden-xs">
+            <div class="panel-heading"><div class="sidebar-header">Search</div></div>
+            <div class="panel-body">
+              <form role="search">
+                <div class="form-group">
+                  <input type="search" class="form-control input-lg" placeholder="Your query">
+                </div>
+                <div class="input-group-btn">
+                  <button class="btn btn-default btn-lg" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="panel panel-info">
+            <div class="panel-heading"><div class="sidebar-header">Login</div></div>
+            <div class="panel-body">
+              <form role="form">
+                <div class="form-group">
+                  <input type="text" class="form-control input-lg" placeholder="Username">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control input-lg" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-warning pull-right">Login</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="panel panel-info">
+            <div class="panel-heading"><div class="sidebar-header">News</div></div>
+            <div class="panel-body">
+              <p>02.31.2017</p>
+              <p>We launched a new service</p>
+            </div>
+          </div>
+
+          <div class="panel panel-info">
+            <div class="panel-heading"><div class="sidebar-header">Movie Rating</div></div>
+            <div class="panel-body">
+              <ul class="list-group">
+                <li class="list-group-item list-group-warning">
+                  <span class="badge">8.9</span>
+                  <a href="intesteler_eng.html">Interstellar</a>
+                </li>
+                <li class="list-group-item list-group-warning">
+                  <span class="badge">8.7</span>
+                  <a href="max_eng.html">Mad Max</a>
+                </li>
+                <li class="list-group-item list-group-warning">
+                  <span class="badge">8.3</span>
+                  <a href="matrix_eng.html">The Matrix</a>
+                </li>
+                <li class="list-group-item list-group-warning">
+                  <span class="badge">8.1</span>
+                  <a href="cloud_atlas_eng.html">Cloud Atlas</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+
+      </div>
     </div>
-    <hr>
-    <h2>Description of Interstellar</h2>
-    <section class="descriptions_film">
-      <img src="../assets/img/inter.png" alt="Interstellar">
-      <p>When drought brings humanity to a food crisis, a group of explorers and scientists travels through a wormhole on a journey to surpass previous human space travel limits and resettle humanity on another planet.</p>
-    </section>
-    <hr>
-    <h2>Interstellar Reviews</h2>
-    <article class="reviews">
-      <div class="review_name">Sergey</div>
-      <div class="review_text">Great movie, 3 hours flew by unnoticed.</div>
-    </article>
-
-    <article class="reviews">
-      <div class="review_name">Dmitry</div>
-      <div class="review_text">After "Inception," I was eagerly awaiting more work from Christopher Nolan. Interstellar impressed me.</div>
-    </article>
-
-    <section class="send">
-      <form method="post" action="#" id="review">
-        <input type="text" name="review_name" placeholder="Your name">
-        <textarea name="review_text" placeholder="Your review"></textarea>
-        <input class="btn" type="submit" value="Submit">
-      </form>
-    </section>
-  </section>
+  </div>
 </main>
 
-<!-- Site Footer -->
-<footer class="footer">
-  <p>
-    <a href="../index.html">Home</a> |
-    <a href="../films.html">Movies</a> |
-    <a href="../serials.html">TV Shows</a> |
-    <a href="../rating.html">Movie Ratings</a> |
-    <a href="../contact.html">Contact</a>
-  </p>
-  <p>kinopoisk.ru</p>
+<footer>
+  <div class="container">
+    <p class="text-center"> <a href="https://www.kinopoisk.ru/">KinoBase</a> </p>
+  </div>
 </footer>
 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
 </body>
 </html>
